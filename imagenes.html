@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imágenes - Gomez Cubre Asientos y Polarizado</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: cursive;
+        background: #0f0f0f url('logo.png') center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #e5e5e5;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(5px);
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .navbar a:hover {
+        color: #00adee;
+      }
+
+      header {
+        text-align: center;
+        padding: 60px 20px 40px;
+        background: linear-gradient(160deg, #0d0d0d, #1a1a1a);
+        border-bottom: 1px solid #333;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 3rem;
+        color: #9cc4ff;
+        letter-spacing: 2px;
+        font-weight: 600;
+      }
+
+      .container {
+        max-width: 1300px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      /* CARDS IGUAL QUE EN INDEX */
+      .card {
+        background: rgba(27, 27, 27, 0.65);
+        padding: 30px;
+        border-radius: 16px;
+        margin-bottom: 45px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(45, 45, 45, 0.6);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        color: #b5b5b5;
+        font-size: 2rem;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
+
+      /* GALERÍA */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 25px;
+      }
+
+      .gallery-item {
+        background: rgba(50, 50, 50, 0.4);
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(45, 45, 45, 0.6);
+        transition: 0.3s;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.02);
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+      }
+
+      footer {
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+        background: #0d0d0d;
+        color: #777;
+        border-top: 1px solid #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Cubre Asientos</a></li>
+        <li><a href="polarizados.html">Polarizados</a></li>
+        <li><a href="imagenes.html">Imágenes</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <h1>GALERÍA</h1>
+    </header>
+
+    <div class="container">
+      <!-- SECCIÓN 1 -->
+      <div class="card">
+        <h2>Diseño Original</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/imagenes/d1.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d2.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d3.jpg" class="gallery-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 2 -->
+      <div class="card">
+        <h2>Diseño Original con Color</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/imagenes/d4.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d5.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d6.jpg" class="gallery-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 3 -->
+      <div class="card">
+        <h2>Deportivo Recto</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/imagenes/d11.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d10.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d12.jpg" class="gallery-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 4 -->
+      <div class="card">
+        <h2>Deportivo Curvo</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/imagenes/d9.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d8.jpg" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="/imagenes/d7.jpg" class="gallery-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Gomez Cubre Asientos y Polarizado</footer>
+  </body>
+</html>
